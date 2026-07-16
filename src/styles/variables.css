@@ -1,0 +1,34 @@
+/* CSS Variable Theme System */
+:root {
+  /* Color Palette */
+  --primary-color: #00ADB5;
+  --primary-glow: rgba(0, 173, 181, 0.25);
+  --secondary-color: #393E46;
+  --bg-color: #0B1120;
+  --bg-card: rgba(30, 41, 59, 0.4);
+  --bg-card-hover: rgba(30, 41, 59, 0.6);
+  --accent-color: #FFB703;
+  --text-white: #FFFFFF;
+  --text-gray: #A0AEC0;
+  --text-dark: #222831;
+  --border-color: rgba(0, 173, 181, 0.15);
+  --border-hover: rgba(0, 173, 181, 0.4);
+
+  /* Fonts */
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-accent: 'Space Grotesk', sans-serif;
+
+  /* Glassmorphism */
+  --glass-bg: rgba(11, 17, 32, 0.7);
+  --glass-blur: blur(12px);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.05);
+
+  /* Transitions & Shadows */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}

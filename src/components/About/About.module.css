@@ -1,0 +1,160 @@
+.aboutSection {
+  background-color: rgba(11, 17, 32, 0.4);
+  position: relative;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.profileCard {
+  padding: 2.5rem;
+  border-radius: 16px;
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.profileCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+}
+
+.profileAvatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem auto;
+  border: 3px solid var(--primary-color);
+  padding: 4px;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.profileAvatar svg {
+  width: 70%;
+  height: 70%;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profileCard h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--text-white);
+}
+
+.profileCard p {
+  text-align: center;
+  color: var(--primary-color);
+  font-family: var(--font-accent);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detailItem {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.detailLabel {
+  color: var(--text-gray);
+  font-weight: 500;
+}
+
+.detailValue {
+  color: var(--text-white);
+  font-weight: 600;
+  text-align: right;
+}
+
+.infoContent h3 {
+  font-size: 1.8rem;
+  color: var(--text-white);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.objective {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.bioText {
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.bulletPoints {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.bullet {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: var(--text-white);
+  font-weight: 500;
+}
+
+.bulletIcon {
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+/* Responsive configurations */
+@media (max-width: 1024px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profileCard {
+    padding: 1.5rem;
+  }
+  
+  .bulletPoints {
+    grid-template-columns: 1fr;
+  }
+}
