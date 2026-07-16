@@ -1,0 +1,173 @@
+.experienceSection {
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timelineItem {
+  padding: 1rem 2rem;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+/* Left & Right positioning */
+.timelineItemLeft {
+  left: 0;
+  text-align: right;
+}
+
+.timelineItemRight {
+  left: 50%;
+  text-align: left;
+}
+
+/* Central Dots */
+.timelineDot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  border: 3px solid var(--primary-color);
+  top: 2rem;
+  z-index: 10;
+  transition: all var(--transition-fast);
+}
+
+.timelineItemLeft .timelineDot {
+  right: -9px;
+}
+
+.timelineItemRight .timelineDot {
+  left: -9px;
+}
+
+.timelineItem:hover .timelineDot {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 10px var(--accent-color);
+}
+
+/* Content cards */
+.timelineContent {
+  padding: 1.8rem;
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+  border-radius: 12px;
+  position: relative;
+  transition: border-color var(--transition-normal);
+}
+
+.timelineItem:hover .timelineContent {
+  border-color: var(--primary-color);
+}
+
+.timelineDate {
+  font-family: var(--font-accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.timelineTitle {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 0.25rem;
+}
+
+.timelineCompany {
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.timelineDesc {
+  font-size: 0.9rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.timelineHighlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.highlightItem {
+  font-size: 0.85rem;
+  color: var(--text-white);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.timelineItemLeft .highlightItem {
+  justify-content: flex-end;
+}
+
+.timelineItemRight .highlightItem {
+  justify-content: flex-start;
+}
+
+.highlightDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+/* Responsive configurations */
+@media (max-width: 768px) {
+  .timeline::after {
+    left: 20px;
+  }
+  
+  .timelineItem {
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 0;
+  }
+  
+  .timelineItemLeft, .timelineItemRight {
+    left: 0;
+    text-align: left;
+  }
+  
+  .timelineItemLeft .timelineDot, .timelineItemRight .timelineDot {
+    left: 11px;
+  }
+  
+  .timelineItemLeft .highlightItem {
+    justify-content: flex-start;
+  }
+}

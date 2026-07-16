@@ -1,0 +1,132 @@
+.educationSection {
+  background-color: rgba(11, 17, 32, 0.4);
+  position: relative;
+}
+
+.eduContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.eduCard {
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+  border-radius: 16px;
+  padding: 2.5rem;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.eduCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--primary-color) 0%, var(--accent-color) 100%);
+}
+
+.eduCard:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 30px rgba(0, 173, 181, 0.1);
+}
+
+.eduHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.titleGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.eduTitle {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 0.25rem;
+}
+
+.eduCollege {
+  font-size: 1.05rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.durationBadge {
+  font-family: var(--font-accent);
+  background: rgba(0, 173, 181, 0.15);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.eduDesc {
+  color: var(--text-gray);
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.courseworkTitle {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-white);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.5rem;
+}
+
+.courseworkGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.courseTag {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.85rem;
+  color: var(--text-gray);
+  text-align: center;
+  transition: all var(--transition-fast);
+}
+
+.courseTag:hover {
+  background: rgba(0, 173, 181, 0.05);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* Responsive configurations */
+@media (max-width: 600px) {
+  .eduCard {
+    padding: 1.5rem;
+  }
+  
+  .eduHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .courseworkGrid {
+    grid-template-columns: 1fr;
+  }
+}
