@@ -2,7 +2,7 @@ export const portfolioData = {
   personalInfo: {
     name: "M Komaethakhi",
     role: "DevOps Engineer | MERN Stack Developer | Full Stack Developer",
-    avatar: "/Komaethakhi.svg",
+    avatar: "Komaethakhi.svg",
     titles: [
       "DevOps Engineer",
       "MERN Stack Developer",
@@ -10,7 +10,7 @@ export const portfolioData = {
     ],
     introduction: "Passionate DevOps Engineer and Full Stack Developer specializing in automating pipelines, cloud deployment, and building scalable web applications.",
     aboutMe: "I am a B.E. Computer Science and Engineering student (2022 - 2027 batch). After taking a temporary academic break during the 2025-2026 academic year due to medical reasons, I re-joined in June 2026 with renewed energy and am currently pursuing my final year. I possess a deep interest in DevOps engineering, full-stack development, and automating deployment pipelines. Throughout my studies, I have focused on engineering robust web platforms, automated workflows, and containerized architectures. I am actively seeking DevOps and Software Engineering opportunities to contribute to growth-oriented projects.",
-    resumeUrl: "/resume.pdf", // Path to resume PDF in public directory
+    resumeUrl: "resume.pdf", // Path to resume PDF in public directory
     email: "komaethakhim@gmail.com",
     phone: "+91 90429 21809", // Professional contact number
     location: "Tamil Nadu, India",
