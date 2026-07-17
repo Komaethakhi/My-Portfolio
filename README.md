@@ -1,16 +1,23 @@
-# React + Vite
+# M Komaethakhi - Professional Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Professional portfolio of **M Komaethakhi**, a B.E. Computer Science and Engineering student and DevOps Engineer Intern at Codingrim Technology Solutions.
 
-Currently, two official plugins are available:
+## 🚀 Live Site
+Check out the live website at: [https://komaethakhi.github.io/My-Portfolio/](https://komaethakhi.github.io/My-Portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+* **Frontend**: React.js, CSS Modules, HTML5, CSS3, JavaScript, Framer Motion
+* **Backend & Database**: Node.js, Express.js, MongoDB, Firebase, PostgreSQL
+* **DevOps & Cloud**: AWS, Docker, Jenkins, GitHub Actions, RedHat Linux (RHCSA/RHCE)
+* **Mobile**: Android Studio, Java (SQLite)
 
-## React Compiler
+## 📁 Key Projects
+1. **Ticket Management System**: Multi-role support portal built with the MERN stack.
+2. **Movie Series Watchlist**: Movie tracking dashboard integrating external media REST APIs.
+3. **My ERP Portal**: Centralized administration and scheduling system for institutions.
+4. **Personalized Event Websites** (Ongoing)
+5. **PingDo Mobile App** (Ongoing)
+6. **AI Integrated Student Management** (Ongoing)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## ⚙️ CI/CD Deployment
+This project is configured with an automated GitHub Actions workflow to build and deploy the React application to GitHub Pages on every push to the `main` branch.
